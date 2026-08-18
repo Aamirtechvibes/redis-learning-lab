@@ -1,20 +1,27 @@
-# Redis TTL
+Redis Learning Lab
 
-## What I learned
+A hands-on journey into Redis, caching, and backend performance.
 
-TTL defines how long a Redis key remains available
-before Redis automatically removes it.
+I'm learning Redis by building small experiments and gradually
+applying them to real-world backend problems.
 
-## Experiment
+## Learning Path
 
-SET product:101 "iPhone"
-EXPIRE product:101 30
+- [x] Redis fundamentals
+- [x] Local Redis setup with Docker
+- [ ] Redis data types
+- [ ] TTL & expiration
+- [ ] Cache-aside pattern
+- [ ] Cache hit/miss analysis
+- [ ] LRU & LFU eviction
+- [ ] Cache stampede
+- [ ] Hot keys
+- [ ] Redis with Node.js
+- [ ] Dynamic TTL
+- [ ] E-commerce caching system
 
-Then check:
+## Goal
 
-TTL product:101
-
-## Why it matters
-
-TTL is one of the core mechanisms I'll use later
-for dynamically controlling e-commerce product cache lifetime.
+Build an intelligent caching layer for an e-commerce/ coffee on QR banner 
+application that dynamically manages product cache TTLs
+based on traffic and popularity.
